@@ -25,7 +25,7 @@ This project converts an existing article into a playable audio file in mp3 form
 
 1. Run the main script:
     ```sh
-    python main.py
+    python3 main.py
     ```
 
 2. Follow the menu options to convert text to speech.
