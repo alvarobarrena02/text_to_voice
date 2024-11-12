@@ -10,8 +10,10 @@ menu = """
 
 print(menu)
 while True:
+
     option = input("Enter an option (1-4): ")
     print(menu)
+
     match option:
         case "1":
             print("##### Read an article #####")
@@ -22,14 +24,13 @@ while True:
             if url == "exit":
                 break
             else:
-                print("\nReading the article, please wait...")
-
                 # Create an instance of the ReadContent class
                 reader = content.ReadContent(url)
                 reader.read_content()
 
             # Add a delay to avoid the program from closing immediately
-            input("Press Enter to continue...")
+            input("\nPress Enter to continue...")
+            print(menu)
 
         case "2":
             print("##### Read a text file #####")
@@ -42,11 +43,10 @@ while True:
                 # Create an instance of the ReadContent class
                 reader = content.ReadContent(file_path, is_url=False)
                 reader.read_content()
-                print("Reading the text file, please wait...")
 
-                # Add a delay to avoid the program from closing immediately
-                input("\nPress Enter to continue...")
-                print(menu)
+            # Add a delay to avoid the program from closing immediately
+            input("\nPress Enter to continue...")
+            print(menu)
 
         case "3":
             print("##### Enter text manually #####")
@@ -63,9 +63,9 @@ while True:
                 print("Reading the text written please wait...")
                 reader.read_content()
 
-                # Add a delay to avoid the program from closing immediately
-                input("\nPress Enter to continue...")
-                print(menu)
+            # Add a delay to avoid the program from closing immediately
+            input("\nPress Enter to continue...")
+            print(menu)
 
         case "4":
             print("Exiting the program...")

@@ -78,5 +78,8 @@ class ReadContent:
             # Keep the program running until the audio finishes
             while pygame.mixer.music.get_busy():
                 time.sleep(1)
+
+            print("\nReading the article, please wait...")
+            
         else:
             print("Could not get the text to read.")
