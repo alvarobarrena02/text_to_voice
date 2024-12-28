@@ -12,7 +12,7 @@ This project converts an existing article into a playable audio file in mp3 form
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/alvarobarrena02/text-to-speech-converter.git
+    git clone https://github.com/alvarobarrenadev/text-to-speech-converter.git
     cd text-to-speech-converter
     ```
 
